@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-final class ZarinpalPlugin {
+final class WooZarinpalPlugin {
     private static $instance = null;
 
     public static function Instance(){
@@ -19,7 +19,7 @@ final class ZarinpalPlugin {
 
     private function __construct()
     {
-        add_action('plugins_loaded', [$this, 'include_files']);
+        add_action('woocommerce_blocks_loaded', [$this, 'include_files']);
     }
 
     /**

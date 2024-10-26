@@ -28,7 +28,8 @@ class ZarinpalUnifiedGateway {
 
     private function has_block_checkout()
     {
-        return class_exists('\Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType');
+        $checkout_page_id = wc_get_page_id('checkout');
+        return $checkout_page_id && has_block('woocommerce/checkout', $checkout_page_id);
     }
 
     private function register_block_gateway() {

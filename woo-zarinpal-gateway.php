@@ -11,6 +11,9 @@
 if (!defined('ABSPATH'))
     exit;
 
+if(class_exists('WooZarinpalPlugin'))
+    return false;
+
 define('ZPGATE_PLUGIN_FILE_PATH', __FILE__);
 define('ZPGATE_PATH', trailingslashit(plugin_dir_path(ZPGATE_PLUGIN_FILE_PATH)));
 define('ZPGATE_INC_PATH', trailingslashit(ZPGATE_PATH . 'includes'));
@@ -21,6 +24,4 @@ define('ZPGATE_IMG_URL', trailingslashit(ZPGATE_URL . 'assets/images'));
 
 require_once ZPGATE_PATH . 'core.php';
 
-if(class_exists('ZarinpalPlugin')){
-    ZarinpalPlugin::Instance();
-}
+WooZarinpalPlugin::Instance();

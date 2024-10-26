@@ -5,7 +5,7 @@ use Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry;
 
 class ZarinpalBlocksIntegration {
     public function __construct() {
-        add_action( 'woocommerce_blocks_loaded', [ $this, 'init' ] );
+        $this->init();
     }
 
     public function init() {
