@@ -2,7 +2,7 @@
 /**
  * Plugin Name: درگاه پرداخت زرین پال برای ووکامرس
  * Plugin URI: https://mihanwp.com/zarinpal-woo
- * Author: میهن وردپرس | علیرضا دهکار
+ * Author: MihanWP | Bavance.com
  * Author URI: https://mihanwp.com
  * Description: افزودن درگاه پرداخت زرین پال به پلاگین ووکامرس، سازگار با حالت کلاسیک و بلاک صفحه تسویه حساب
  * Version: 1.0.0
