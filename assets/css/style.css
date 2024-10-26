@@ -1,0 +1,13 @@
+.wc-zarinpal-payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wc-zarinpal-processing {
+    background-color: #71df64;
+    color: #1d4201;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
