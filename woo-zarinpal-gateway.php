@@ -5,7 +5,7 @@
  * Author: MihanWP | Bavance.com
  * Author URI: https://mihanwp.com
  * Description: افزودن درگاه پرداخت زرین پال به پلاگین ووکامرس، سازگار با حالت کلاسیک و بلاک صفحه تسویه حساب
- * Version: 1.0.0
+ * Version: 1.0
  */
 
 if (!defined('ABSPATH'))

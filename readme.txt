@@ -1,16 +1,21 @@
-=== درگاه پرداخت زرین پال برای ووکامرس ===
-Contributors: میهن وردپرس و علیرضا دهکار
-Requires at least: 5.0
-Tested up to: 6.2
+=== Zarinpal for Woocommerce ===
+Contributors: mihanwp, alirezadehkar
+Donate link: https://mihanwp.com/
+Tags: woocommerce,payments,zarinpal
+Requires at least: 6.6.2
+Tested up to: 6.6.2
+Requires PHP: 7.4
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-* قابلیت فعال/غیرفعالسازی حالت سندباکس زرین پال
+### Zarinpal payment gateway plugin for Woocommerce
 
-**آیا پلاگین با نسخه جدید تسویه حساب (حالت بلاک) ووکامرس سازگار است؟**
-پاسخ: بله،این پلاگین با آخرین نسخه ووکامرس کاملا سازگار است.
+* Compatible with classic and block version of Woocommerce checkout page
+* Ability to activate Zarinpal sandbox (test mode)
 
-== تغییرات ==
-= 1.0 =
-* انتشار اولیه پلاگین
+**Report Bugs & Contribution:**
+Do you want to report plugin bugs and contribute to plugin development? Join us at [Zarinpal Woocommerce Github Page](https://github.com/mihanwp/zarinpal-woocommerce "Zarinpal Woocommerce on GitHub")
+
+== Changelog ==
+[View Plugin Changelog](https://mihanwp.com/zarinpal-woo/ "Zarinpal Woocommerce Changelog")
