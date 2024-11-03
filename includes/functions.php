@@ -11,10 +11,10 @@ add_filter('woocommerce_currencies', 'handle_zarinpal_register_ir_currency');
 
 function handle_zarinpal_register_ir_currency($currencies)
 {
-    $currencies['IRR'] = __('ریال', 'woocommerce');
-    $currencies['IRT'] = __('تومان', 'woocommerce');
-    $currencies['IRHR'] = __('هزار ریال', 'woocommerce');
-    $currencies['IRHT'] = __('هزار تومان', 'woocommerce');
+    $currencies['IRR'] = 'ریال';
+    $currencies['IRT'] = 'تومان';
+    $currencies['IRHR'] = 'هزار ریال';
+    $currencies['IRHT'] = 'هزار تومان';
 
     return $currencies;
 }

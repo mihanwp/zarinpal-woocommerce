@@ -1,11 +1,13 @@
 <?php
 /**
- * Plugin Name: درگاه پرداخت زرین پال برای ووکامرس
+ * Plugin Name: Zarinpal for Woocommerce
  * Plugin URI: https://mihanwp.com/zarinpal-woo
  * Author: MihanWP | Bavance.com
  * Author URI: https://mihanwp.com
- * Description: افزودن درگاه پرداخت زرین پال به پلاگین ووکامرس، سازگار با حالت کلاسیک و بلاک صفحه تسویه حساب
+ * Description: Adding zarinpal payment gateway to woocommerce plugin, compatible with classic and block mode checkout page
  * Version: 1.0
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 if (!defined('ABSPATH'))

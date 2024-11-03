@@ -10,8 +10,8 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
     public function __construct()
     {
         $this->id = ZarinPalUnifiedGateway::ID;
-        $this->method_title = __('پرداخت امن زرین پال', 'woocommerce');
-        $this->method_description = __('تنظیمات درگاه پرداخت زرین پال برای افزونه فروشگاه ساز ووکامرس', 'woocommerce');
+        $this->method_title = 'پرداخت امن زرین پال';
+        $this->method_description = 'تنظیمات درگاه پرداخت زرین پال برای افزونه فروشگاه ساز ووکامرس';
         $this->icon = ZPGATE_IMG_URL . 'logo.png';
         $this->has_fields = false;
 
@@ -52,68 +52,68 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
             ZarinpalUnifiedGateway::get_prefix() . '_Config',
             array(
                 'base_config' => array(
-                    'title' => __('تنظیمات پایه ای', 'woocommerce'),
+                    'title' => 'تنظیمات پایه ای',
                     'type' => 'title',
                     'description' => '',
                 ),
                 'enabled' => array(
-                    'title' => __('فعالسازی/غیرفعالسازی', 'woocommerce'),
+                    'title' => 'فعالسازی/غیرفعالسازی',
                     'type' => 'checkbox',
-                    'label' => __('فعالسازی درگاه زرین پال', 'woocommerce'),
-                    'description' => __('برای فعالسازی درگاه پرداخت زرین پال باید چک باکس را تیک بزنید', 'woocommerce'),
+                    'label' => 'فعالسازی درگاه زرین پال',
+                    'description' => 'برای فعالسازی درگاه پرداخت زرین پال باید چک باکس را تیک بزنید',
                     'default' => 'yes',
                     'desc_tip' => true,
                 ),
                 'sandbox_enabled' => array(
-                    'title' => __('فعالسازی/غیرفعالسازی', 'woocommerce'),
+                    'title' => 'فعالسازی/غیرفعالسازی',
                     'type' => 'checkbox',
-                    'label' => __('فعالسازی سندباکس', 'woocommerce'),
-                    'description' => __('برای فعالسازی سندباکس (حالت تست) باید چک باکس را تیک بزنید', 'woocommerce'),
+                    'label' => 'فعالسازی سندباکس',
+                    'description' => 'برای فعالسازی سندباکس (حالت تست) باید چک باکس را تیک بزنید',
                     'default' => 'no',
                     'desc_tip' => true,
                 ),
                 'title' => array(
-                    'title' => __('عنوان درگاه', 'woocommerce'),
+                    'title' => 'عنوان درگاه',
                     'type' => 'text',
-                    'description' => __('عنوان درگاه که در طی خرید به مشتری نمایش داده میشود', 'woocommerce'),
-                    'default' => __('پرداخت امن زرین پال', 'woocommerce'),
+                    'description' => 'عنوان درگاه که در طی خرید به مشتری نمایش داده میشود',
+                    'default' => 'پرداخت امن زرین پال',
                     'desc_tip' => true,
                 ),
                 'description' => array(
-                    'title' => __('توضیحات درگاه', 'woocommerce'),
+                    'title' => 'توضیحات درگاه',
                     'type' => 'text',
                     'desc_tip' => true,
-                    'description' => __('توضیحاتی که در طی عملیات پرداخت برای درگاه نمایش داده خواهد شد', 'woocommerce'),
-                    'default' => __('پرداخت امن به وسیله کلیه کارت های عضو شتاب از طریق درگاه زرین پال', 'woocommerce')
+                    'description' => 'توضیحاتی که در طی عملیات پرداخت برای درگاه نمایش داده خواهد شد',
+                    'default' => 'پرداخت امن به وسیله کلیه کارت های عضو شتاب از طریق درگاه زرین پال'
                 ),
                 'account_config' => array(
-                    'title' => __('تنظیمات حساب زرین پال', 'woocommerce'),
+                    'title' => 'تنظیمات حساب زرین پال',
                     'type' => 'title',
                     'description' => '',
                 ),
                 'merchant_id' => array(
-                    'title' => __('مرچنت کد', 'woocommerce'),
+                    'title' => 'مرچنت کد',
                     'type' => 'text',
-                    'description' => __('مرچنت کد درگاه زرین پال', 'woocommerce'),
+                    'description' => 'مرچنت کد درگاه زرین پال',
                     'default' => '',
                     'desc_tip' => true
                 ),
                 'payment_config' => array(
-                    'title' => __('تنظیمات عملیات پرداخت', 'woocommerce'),
+                    'title' => 'تنظیمات عملیات پرداخت',
                     'type' => 'title',
                     'description' => '',
                 ),
                 'success_massage' => array(
-                    'title' => __('پیام پرداخت موفق', 'woocommerce'),
+                    'title' => 'پیام پرداخت موفق',
                     'type' => 'textarea',
-                    'description' => __('متن پیامی که میخواهید بعد از پرداخت موفق به کاربر نمایش دهید را وارد نمایید . همچنین می توانید از شورت کد {transaction_id} برای نمایش کد رهگیری (توکن) زرین پال استفاده نمایید .', 'woocommerce'),
-                    'default' => __('با تشکر از شما . سفارش شما با موفقیت پرداخت شد .', 'woocommerce'),
+                    'description' => 'متن پیامی که میخواهید بعد از پرداخت موفق به کاربر نمایش دهید را وارد نمایید . همچنین می توانید از شورت کد {transaction_id} برای نمایش کد رهگیری (توکن) زرین پال استفاده نمایید .',
+                    'default' => 'با تشکر از شما . سفارش شما با موفقیت پرداخت شد .',
                 ),
                 'failed_massage' => array(
-                    'title' => __('پیام پرداخت ناموفق', 'woocommerce'),
+                    'title' => 'پیام پرداخت ناموفق',
                     'type' => 'textarea',
-                    'description' => __('متن پیامی که میخواهید بعد از پرداخت ناموفق به کاربر نمایش دهید را وارد نمایید . همچنین می توانید از شورت کد {fault} برای نمایش دلیل خطای رخ داده استفاده نمایید . این دلیل خطا از سایت زرین پال ارسال میگردد .', 'woocommerce'),
-                    'default' => __('پرداخت شما ناموفق بوده است . لطفا مجددا تلاش نمایید یا در صورت بروز اشکال با مدیر سایت تماس بگیرید .', 'woocommerce'),
+                    'description' => 'متن پیامی که میخواهید بعد از پرداخت ناموفق به کاربر نمایش دهید را وارد نمایید . همچنین می توانید از شورت کد {fault} برای نمایش دلیل خطای رخ داده استفاده نمایید . این دلیل خطا از سایت زرین پال ارسال میگردد .',
+                    'default' => 'پرداخت شما ناموفق بوده است . لطفا مجددا تلاش نمایید یا در صورت بروز اشکال با مدیر سایت تماس بگیرید .',
                 ),
             )
         );
@@ -137,18 +137,25 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
     public function send_request($action, $params)
     {
         try {
-            $ch = curl_init($this->get_base_url() . 'pg/v4/payment/' . $action . '.json');
-            curl_setopt($ch, CURLOPT_USERAGENT, 'ZarinPal Rest Api v1');
-            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                'Content-Type: application/json',
-                'Content-Length: ' . strlen($params)
-            ));
-            $result = curl_exec($ch);
-            return json_decode($result, true);
+            $url = $this->get_base_url() . 'pg/v4/payment/' . $action . '.json';
+
+            $args = [
+                'method'  => 'POST',
+                'body'    => $params,
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                ],
+                'sslverify' => false,
+            ];
+
+            $response = wp_remote_post($url, $args);
+
+            if (is_wp_error($response)) {
+                return false;
+            }
+
+            $body = wp_remote_retrieve_body($response);
+            return json_decode($body, true);
         } catch (\Exception $ex) {
             return false;
         }
@@ -163,8 +170,9 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
         $currency = apply_filters(ZarinpalUnifiedGateway::get_prefix() . '_Currency', $order->get_currency(), $order_id);
 
         $form = '<form action="" method="POST" class="zarinpal-checkout-form" id="zarinpal-checkout-form">
-                <input type="submit" name="zarinpal_submit" class="button alt" id="zarinpal-payment-button" value="' . __('پرداخت', 'woocommerce') . '"/>
-                <a class="button cancel" href="' . wc_get_checkout_url() . '">' . __('بازگشت', 'woocommerce') . '</a>
+                <input type="submit" name="zarinpal_submit" class="button alt" id="zarinpal-payment-button" value="پرداخت"/>
+                <input type="hidden" name="_nonce" value="'. wp_create_nonce('zpgate_nonce') .'"/>
+                <a class="button cancel" href="' . wc_get_checkout_url() . '">بازگشت</a>
              </form><br/>';
 
         $form = apply_filters(ZarinpalUnifiedGateway::get_prefix() . '_Form', $form, $order_id, $woocommerce);
@@ -175,7 +183,7 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
             'input' => ['type', 'name', 'class', 'id', 'value'],
             'a' => ['class', 'href']
         ]);
-        do_action('WC_ZPal_Gateway_After_Form', $order_id);
+        do_action(ZarinpalUnifiedGateway::get_prefix() . '_gateway_after_form', $order_id);
 
         $Amount = intval($order->get_total());
         $Amount = apply_filters('woocommerce_order_amount_total_IRANIAN_gateways_before_check_currency', $Amount, $currency);
@@ -202,7 +210,7 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
             $order->get_billing_last_name()
         );
 
-        $Mobile = apply_filters(ZarinpalUnifiedGateway::get_prefix() . '_Mobile', $order->get_billing_phone(), $order_id);
+        $Mobile = apply_filters(ZarinpalUnifiedGateway::get_prefix() . '_mobile', $order->get_billing_phone(), $order_id);
         $Email = filter_var($order->get_billing_email(), FILTER_VALIDATE_EMAIL) ?: '';
 
         do_action(ZarinpalUnifiedGateway::get_prefix() . '_gateway_payment', $order_id, $Description, $Mobile);
@@ -230,7 +238,7 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
         if ($Email) {
             $data['metadata']['email'] = $Email;
         }
-        $result = $this->send_request('request', json_encode($data));
+        $result = $this->send_request('request', wp_json_encode($data));
 
         if ($result === false) {
             echo esc_html('cURL Error #:');
@@ -245,8 +253,13 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
     public function return_from_gateway()
     {
         global $woocommerce;
-        $InvoiceNumber = isset($_POST['InvoiceNumber']) ? sanitize_text_field($_POST['InvoiceNumber']) : '';
-        $order_id = isset($_GET['wc_order']) ? sanitize_text_field($_GET['wc_order']) : ($InvoiceNumber ?: $woocommerce->session->order_id_zarinpal);
+        if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST'){
+            if (isset($_POST['_nonce']) && !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_nonce'])), 'zpgate_nonce'))
+                return false;
+        }
+
+        $InvoiceNumber = isset($_POST['InvoiceNumber']) ? sanitize_text_field(wp_unslash($_POST['InvoiceNumber'])) : '';
+        $order_id = isset($_GET['wc_order']) ? sanitize_text_field(wp_unslash($_GET['wc_order'])) : ($InvoiceNumber ?: $woocommerce->session->order_id_zarinpal);
 
         if ($order_id) {
             $order = $this->get_order($order_id);
@@ -254,7 +267,7 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
 
             if ($order->get_status() !== 'completed') {
                 $MerchantID = $this->merchantCode;
-                if ($_GET['Status'] === 'OK') {
+                if (!empty($_GET['Status']) && $_GET['Status'] === 'OK') {
                     $Amount = intval($order->get_total());
                     $Amount = apply_filters('woocommerce_order_amount_total_IRANIAN_gateways_before_check_currency', $Amount, $currency);
                     $strToLowerCurrency = strtolower($currency);
@@ -268,13 +281,13 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
                             break;
                     }
 
-                    $Authority = sanitize_text_field($_GET['Authority']);
+                    $Authority = !empty($_GET['Authority']) ? sanitize_text_field(wp_unslash($_GET['Authority'])) : null;
                     $data = [
                         'merchant_id' => $MerchantID,
                         'authority' => $Authority,
                         'amount' => $Amount
                     ];
-                    $result = $this->send_request('verify', json_encode($data));
+                    $result = $this->send_request('verify', wp_json_encode($data));
 
                     $this->handle_transaction_result($result, $order, $MerchantID, $order_id);
                 } else {
@@ -291,10 +304,10 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
         } else {
             $Message = 'تراکنش ناموفق بود';
         }
-        $Note = sprintf(__('خطا در هنگام ارسال به بانک : %s', 'woocommerce'), $Message);
+        $Note = sprintf('خطا در هنگام ارسال به بانک : %s', $Message);
         $order->add_order_note($Note);
 
-        $Notice = sprintf(__('در هنگام اتصال به بانک خطای زیر رخ داده است : <br/>%s', 'woocommerce'), $Message);
+        $Notice = sprintf('در هنگام اتصال به بانک خطای زیر رخ داده است : <br/>%s', $Message);
         if ($Notice) {
             wc_add_notice($Notice, 'error');
         }
@@ -312,7 +325,7 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
             $order->payment_complete($Transaction_ID);
             $woocommerce->cart->empty_cart();
 
-            $Note = sprintf(__('پرداخت موفقیت آمیز بود .<br/> کد رهگیری : %s', 'woocommerce'), $Transaction_ID);
+            $Note = sprintf('پرداخت موفقیت آمیز بود .<br/> کد رهگیری : %s', $Transaction_ID);
             $order->add_order_note($Note, 1);
 
             $Notice = wpautop(wptexturize($this->successMassage));
@@ -330,10 +343,10 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
         } else {
             $Fault = $result['errors']['code'];
             $Message = sprintf('تراکنش ناموفق بود - کد خطا : %s', $Fault);
-            $Note = sprintf(__('خطا در هنگام بررسی پرداخت : %s', 'woocommerce'), $Message);
+            $Note = sprintf('خطا در هنگام بررسی پرداخت : %s', $Message);
             $order->add_order_note($Note);
 
-            $Notice = sprintf(__('تراکنش ناموفق بود - خطا : %s', 'woocommerce'), $Fault);
+            $Notice = sprintf('تراکنش ناموفق بود - خطا : %s', $Fault);
             wc_add_notice($Notice, 'error');
             do_action(ZarinpalUnifiedGateway::get_prefix() . '_return_from_gateway_failed', $order_id, $Fault);
 
@@ -343,8 +356,8 @@ class ZarinpalPaymentGateway extends \WC_Payment_Gateway
 
     private function handle_failed_transaction($order)
     {
-        $Message = __('تراکنش ناموفق بود', 'woocommerce');
-        $Note = __('پرداخت ناموفق بود.', 'woocommerce');
+        $Message = 'تراکنش ناموفق بود';
+        $Note = 'پرداخت ناموفق بود.';
         $order->add_order_note($Note);
         wc_add_notice($Message, 'error');
         wp_redirect(wc_get_checkout_url());
